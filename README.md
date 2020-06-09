@@ -2,11 +2,9 @@
 
 ## Run
 
-1. Run `make run`. (this may take some time at first time.)
-
-※ If you want to change your execute file from main.go, you can add the `exec` option.
-
-`make run exec=sample.go`
+1. Run `make run`. (this may take some time at first time.)  
+   ※ If you want to change the executable from `main.go`, use the `exec` option. ex) `make run exec=sample.go`
+2. If you see the following, access [http//localhost:9000](http//localhost:9000)
 
 ## Stop
 
