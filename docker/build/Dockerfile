@@ -7,6 +7,7 @@ WORKDIR /projec
 RUN apk add go git && \
     go get -u github.com/gin-gonic/gin && \
     cd /project && \
+    if [ ! -f ./go.mod ]; then go mod init app; fi && \
     go build main.go
 
 FROM alpine
