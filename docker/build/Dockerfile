@@ -2,7 +2,7 @@ FROM alpine as build
 
 RUN mkdir /project
 COPY ./ /project
-WORKDIR /projec
+WORKDIR /project
 
 RUN apk add go git && \
     go get -u github.com/gin-gonic/gin && \
